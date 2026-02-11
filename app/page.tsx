@@ -1,13 +1,29 @@
 "use client";
 import { Shuffle, Square, Layers, Instagram, Linkedin } from "lucide-react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const image = document.querySelector(".hero-image img") as HTMLElement;
+      if (!image) return;
+
+      const scrollY = window.scrollY;
+      image.style.transform = `translateY(${scrollY * 0.08}px) scale(1.03)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main>
 
       {/* NAVBAR */}
-      <header className="nav">
+      {/* <header className="nav">
         <div className="nav-inner">
           <div className="logo">
             <Image
@@ -21,17 +37,54 @@ export default function Home() {
 
 
           <nav className="nav-links">
-            <a href="/about">About</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/services">Services</a>
-            <a href="/contact" className="nav-cta">Contact</a>
+            <a href="#hero">About</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#cta" className="nav-cta">Contact</a>
           </nav>
+        </div>
+      </header> */}
+
+      <header className="nav">
+        <div className="nav-inner">
+
+          <div className="logo">
+            <Image
+              src="/images/logo.svg"
+              alt="Arzoo Agha logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </div>
+
+          <nav className="nav-links desktop">
+            <a href="#home">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#contact" className="nav-cta">Contact</a>
+          </nav>
+
+          <button
+            className={`hamburger ${menuOpen ? "open" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span />
+            <span />
+          </button>
         </div>
       </header>
 
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        <a href="#home" onClick={() => setMenuOpen(false)}>About</a>
+        <a href="#portfolio" onClick={() => setMenuOpen(false)}>Portfolio</a>
+        <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+      </div>
+
 
       {/* HERO */}
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="hero-inner">
           <div className="hero-image">
             <img src="/images/heronew.png" alt="Arzoo Agha portrait" />
@@ -53,7 +106,7 @@ export default function Home() {
       </section>
 
       {/* SELECTED PROJECTS */}
-      <section className="projects" data-reveal>
+      <section id="projects" className="projects" data-reveal>
         <div className="projects-inner">
           <div className="section-header">
             <h2 data-reveal-item>Selected projects and creative direction</h2>
@@ -124,9 +177,8 @@ export default function Home() {
 
       </section>
 
-
       {/* SERVICES */}
-      <section className="services" data-reveal>
+      <section id="services" className="services" data-reveal>
         <div className="services-inner">
 
           <div className="services-image" data-reveal-item>
@@ -169,9 +221,8 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* TESTIMONIAL */}
-      <section className="testimonial">
+      <section id="testimonial" className="testimonial">
         <div className="testimonial-inner">
           <p className="testimonial-quote">
             “Arzoo brought clarity to our brand identity. The work was thoughtful,
@@ -192,7 +243,7 @@ export default function Home() {
 
 
       {/* CTA */}
-      <section className="cta" data-reveal>
+      <section id="cta" className="cta" data-reveal>
         <div className="cta-inner">
           <div className="cta-text" data-reveal-item>
             <h2>Ready to elevate<br />your brand</h2>
