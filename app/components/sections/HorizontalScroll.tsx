@@ -1,25 +1,25 @@
 "use client";
 
 import { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function HorizontalScroll() {
-  useEffect(() => {
-    gsap.to(".track", {
-      xPercent: -200,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".horizontal",
-        start: "top top",
-        end: "+=2000",
-        scrub: 1,
-        pin: true,
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.to(".track", {
+  //     xPercent: -200,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".horizontal",
+  //       start: "top top",
+  //       end: "+=2000",
+  //       scrub: 1,
+  //       pin: true,
+  //     },
+  //   });
+  // }, []);
 
   return (
     <section className="horizontal">

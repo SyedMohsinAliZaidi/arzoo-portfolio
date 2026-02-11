@@ -1,18 +1,18 @@
 "use client";
 
 import { useEffect } from "react";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 export default function Hero() {
-  useEffect(() => {
-    gsap.from(".hero span", {
-      y: 120,
-      opacity: 0,
-      stagger: 0.15,
-      duration: 1.2,
-      ease: "power4.out",
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from(".hero span", {
+  //     y: 120,
+  //     opacity: 0,
+  //     stagger: 0.15,
+  //     duration: 1.2,
+  //     ease: "power4.out",
+  //   });
+  // }, []);
 
   return (
     <section className="hero">
