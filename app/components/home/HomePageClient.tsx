@@ -52,7 +52,7 @@ export default function HomePageClient() {
                 <div className="nav-inner">
                     <div className="logo">
                         <Image
-                            src="/images/logo.svg"
+                            src="/images/Logo.svg"
                             alt="Arzoo Agha logo"
                             width={60}
                             height={60}
