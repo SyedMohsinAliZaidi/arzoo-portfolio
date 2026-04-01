@@ -2,50 +2,50 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "KALASH-ify",
+    title: "Italian Fashion Culture",
     description:
-        "KALASH-ify is a research-led digital fashion and cultural storytelling project focused on communicating the identity of the Kalash Valley through design.",
+        "A research project exploring Italian craftsmanship, fashion identity, production culture, and the relationship between design, economy, and society.",
 };
 
-export default function KalashifyPage() {
+export default function ItalianFashionPage() {
     return (
         <main className="project-page">
             <section className="project-hero">
                 <div className="project-container project-hero-grid">
                     <div className="project-hero-copy">
                         <a href="/#projects" className="project-back-link">← Back to projects</a>
-                        <p className="project-eyebrow">Project 01</p>
-                        <h1>KALASH-ify</h1>
+                        <p className="project-eyebrow">Project 02</p>
+                        <h1>Italian Fashion Culture</h1>
                         <p className="project-subtitle">
-                            A research-led digital fashion and cultural storytelling project
-                            focused on communicating the identity of the Kalash Valley through
-                            design.
+                            A research project exploring Italian craftsmanship, fashion
+                            identity, production culture, and the relationship between design,
+                            economy, and society.
                         </p>
 
                         <div className="project-meta-grid">
                             <div>
                                 <span className="project-meta-label">Category</span>
-                                <p>Digital Design / Fashion Research / Cultural Storytelling</p>
+                                <p>Fashion Research / Cultural Analysis / Visual Study</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Year</span>
-                                <p>2024</p>
+                                <p>2023</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Focus</span>
-                                <p>Heritage communication, visual research, product concept</p>
+                                <p>Italian style, craftsmanship, manufacturing, cultural value</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Role</span>
-                                <p>Research, concept, visual direction, digital presentation</p>
+                                <p>Research, analysis, documentation, visual presentation</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="project-hero-media">
                         <Image
-                            src="/images/KelashProject.jpg"
-                            alt="KALASH-ify project cover"
+                            src="/images/ItalianProject2.webp"
+                            alt="Italian Fashion Culture project cover"
                             fill
                             priority
                             className="project-cover"
@@ -61,16 +61,17 @@ export default function KalashifyPage() {
                     </div>
                     <div>
                         <p>
-                            KALASH-ify explores how digital design can help preserve and
-                            communicate the cultural identity of the Kalash Valley in Pakistan.
-                            The project brings together visual research, cultural analysis,
-                            fashion inspiration, and product storytelling to make heritage more
-                            accessible in a contemporary format.
+                            This project investigates the meaning of Italian fashion culture
+                            through both theory and observation. It connects ideas from
+                            writing on Italian style with real-world examples of artisanship,
+                            production methods, and the value systems that shape Italian
+                            design.
                         </p>
                         <p>
-                            The work combines traditional references with a modern design
-                            language, translating cultural motifs, colors, materials, and
-                            narratives into visual experiences and product concepts.
+                            The work studies how quality, heritage, and craftsmanship are not
+                            only part of fashion aesthetics, but also part of Italy’s wider
+                            cultural and economic identity. It presents fashion as a system of
+                            social meaning as well as a design practice.
                         </p>
                     </div>
                 </div>
@@ -82,28 +83,26 @@ export default function KalashifyPage() {
 
                     <div className="project-cards-three">
                         <article className="project-card-box">
-                            <h3>Preserve identity</h3>
+                            <h3>Understand Italian style</h3>
                             <p>
-                                Highlight the cultural richness of the Kalash Valley through a
-                                design system that respects heritage and celebrates local
-                                expression.
+                                Explore how fashion in Italy reflects national identity,
+                                cultural values, design history, and social perception.
                             </p>
                         </article>
 
                         <article className="project-card-box">
-                            <h3>Translate culture digitally</h3>
+                            <h3>Study craftsmanship</h3>
                             <p>
-                                Turn cultural research into a digital narrative that feels
-                                visually engaging, contemporary, and accessible to wider
-                                audiences.
+                                Examine the role of artisans, production knowledge, and material
+                                quality in shaping high-value Italian products.
                             </p>
                         </article>
 
                         <article className="project-card-box">
-                            <h3>Create meaningful design output</h3>
+                            <h3>Connect theory and practice</h3>
                             <p>
-                                Develop outcomes that move beyond documentation and into
-                                storytelling, concept design, and product imagination.
+                                Relate written research to observed examples from fashion
+                                production and workshop-based learning.
                             </p>
                         </article>
                     </div>
@@ -118,11 +117,11 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">01</span>
                             <div>
-                                <h3>Cultural research</h3>
+                                <h3>Contextual research</h3>
                                 <p>
-                                    Study of Kalash geography, dress, language, traditions,
-                                    rituals, lifestyle, and visual symbols to build a grounded
-                                    design direction.
+                                    Review of the cultural and economic meaning of Italian style,
+                                    with focus on how fashion represents social values and
+                                    heritage.
                                 </p>
                             </div>
                         </div>
@@ -130,11 +129,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">02</span>
                             <div>
-                                <h3>Visual analysis</h3>
+                                <h3>Craft analysis</h3>
                                 <p>
-                                    Identification of colors, textures, patterns, and cultural
-                                    elements that could be translated into contemporary visual
-                                    communication.
+                                    Study of materials, making processes, and artisan knowledge as
+                                    central parts of product identity and perceived value.
                                 </p>
                             </div>
                         </div>
@@ -142,11 +140,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">03</span>
                             <div>
-                                <h3>Concept development</h3>
+                                <h3>Workshop observation</h3>
                                 <p>
-                                    Transformation of research insights into moodboards,
-                                    storytelling direction, digital presentation, and product
-                                    concept exploration.
+                                    Documentation of production culture through direct exposure to
+                                    shoemaking and the practical environment of Italian craft.
                                 </p>
                             </div>
                         </div>
@@ -154,11 +151,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">04</span>
                             <div>
-                                <h3>Design application</h3>
+                                <h3>Interpretation</h3>
                                 <p>
-                                    Application of the concept into a polished project narrative
-                                    that connects cultural heritage with fashion and digital
-                                    storytelling.
+                                    Translation of findings into a structured visual and written
+                                    project that links theory, practice, and cultural reflection.
                                 </p>
                             </div>
                         </div>
@@ -173,8 +169,8 @@ export default function KalashifyPage() {
                     <div className="project-gallery">
                         <div className="project-gallery-item project-gallery-large">
                             <Image
-                                src="/images/KelashProject.jpg"
-                                alt="KALASH-ify featured visual"
+                                src="/images/ItalianProject2.webp"
+                                alt="Italian Fashion Culture featured visual"
                                 fill
                                 className="project-cover"
                             />
@@ -182,8 +178,8 @@ export default function KalashifyPage() {
 
                         <div className="project-gallery-item">
                             <Image
-                                src="/images/ItalianProject2.webp"
-                                alt="Research layout placeholder"
+                                src="/images/KelashProject.jpg"
+                                alt="Italian research visual placeholder"
                                 fill
                                 className="project-cover"
                             />
@@ -192,7 +188,7 @@ export default function KalashifyPage() {
                         <div className="project-gallery-item">
                             <Image
                                 src="/images/Project3.webp"
-                                alt="Visual storytelling placeholder"
+                                alt="Italian craftsmanship visual placeholder"
                                 fill
                                 className="project-cover"
                             />
@@ -209,18 +205,18 @@ export default function KalashifyPage() {
 
                     <div>
                         <p>
-                            The final outcome positions design as a bridge between cultural
-                            preservation and modern communication. Instead of treating heritage
-                            as static, KALASH-ify presents it as living visual material that
-                            can inspire digital experiences, fashion concepts, and
-                            contemporary storytelling.
+                            The project frames Italian fashion not only as a design outcome
+                            but as a cultural ecosystem shaped by artisanship, quality, and
+                            historical continuity. It demonstrates how fashion research can
+                            reveal the deeper structures behind what makes Italian products
+                            globally respected.
                         </p>
 
                         <ul className="project-result-list">
-                            <li>Research-based concept with strong cultural grounding</li>
-                            <li>Clear visual identity and narrative direction</li>
-                            <li>Fashion and product storytelling integration</li>
-                            <li>Portfolio-ready presentation with real thematic depth</li>
+                            <li>Clear understanding of Italian design culture</li>
+                            <li>Strong connection between craftsmanship and identity</li>
+                            <li>Theory supported by observational learning</li>
+                            <li>Portfolio-ready research narrative with cultural depth</li>
                         </ul>
                     </div>
                 </div>
@@ -230,13 +226,14 @@ export default function KalashifyPage() {
                 <div className="project-container project-next-card">
                     <div>
                         <p className="project-eyebrow">Next project</p>
-                        <h2>Italian Fashion Culture</h2>
+                        <h2>SHIVERTALE</h2>
                         <p>
-                            Research on Italian craftsmanship, economy, and design culture.
+                            A gothic-inspired fashion narrative exploring atmosphere and
+                            visual storytelling.
                         </p>
                     </div>
 
-                    <a href="/work/italian-fashion" className="project-button">
+                    <a href="/work/shivertale" className="project-button">
                         View next project
                     </a>
                 </div>

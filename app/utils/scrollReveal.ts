@@ -1,21 +1,21 @@
 export function initScrollReveal() {
-    const sections = document.querySelectorAll<HTMLElement>('[data-reveal]');
+    const elements = document.querySelectorAll("[data-reveal]");
 
-    if (!sections.length) return;
+    if (!elements.length) return;
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
+                    entry.target.classList.add("is-visible");
                 }
             });
         },
         {
-            threshold: 0.2,
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px",
         }
     );
 
-    sections.forEach((section) => observer.observe(section));
+    elements.forEach((element) => observer.observe(element));
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Work() {
     return (
         <main className="work-index">
@@ -13,7 +14,12 @@ export default function Work() {
             {/* PROJECT 1 */}
             <section className="work-item">
                 <a href="/work/kalashify">
-                    <img src="/images/kalash-thumb.jpg" alt="KALASH-ify project" />
+                    <Image
+                        src="/images/kalash-thumb.jpg"
+                        alt="KALASH-ify project"
+                        width={800}
+                        height={600}
+                    />
                 </a>
                 <div className="work-meta">
                     <span>Master’s Thesis</span>
@@ -29,7 +35,8 @@ export default function Work() {
             {/* PROJECT 2 */}
             <section className="work-item">
                 <a href="/work/project-two">
-                    <img src="/images/fabric-1.jpg" alt="Project two" />
+                    <Image src="/images/fabric-1.jpg" alt="Project two" width={800}
+                        height={600} />
                 </a>
                 <div className="work-meta">
                     <span>Digital Design</span>
@@ -44,7 +51,7 @@ export default function Work() {
             {/* PROJECT 3 */}
             <section className="work-item">
                 <a href="/work/project-three">
-                    <img src="/images/fabric-2.jpg" alt="Project three" />
+                    <Image src="/images/fabric-2.jpg" alt="Project three" width={800} height={600} />
                 </a>
                 <div className="work-meta">
                     <span>Visual Research</span>

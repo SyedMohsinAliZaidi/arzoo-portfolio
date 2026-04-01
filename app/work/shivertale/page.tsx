@@ -2,50 +2,50 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "KALASH-ify",
+    title: "SHIVERTALE",
     description:
-        "KALASH-ify is a research-led digital fashion and cultural storytelling project focused on communicating the identity of the Kalash Valley through design.",
+        "A gothic-inspired fashion narrative exploring atmosphere, storytelling, costume design, and emotional visual expression through cinematic influence.",
 };
 
-export default function KalashifyPage() {
+export default function ShivertalePage() {
     return (
         <main className="project-page">
             <section className="project-hero">
                 <div className="project-container project-hero-grid">
                     <div className="project-hero-copy">
                         <a href="/#projects" className="project-back-link">← Back to projects</a>
-                        <p className="project-eyebrow">Project 01</p>
-                        <h1>KALASH-ify</h1>
+                        <p className="project-eyebrow">Project 03</p>
+                        <h1>SHIVERTALE</h1>
                         <p className="project-subtitle">
-                            A research-led digital fashion and cultural storytelling project
-                            focused on communicating the identity of the Kalash Valley through
-                            design.
+                            A gothic-inspired fashion narrative exploring atmosphere,
+                            storytelling, costume design, and emotional visual expression
+                            through cinematic influence.
                         </p>
 
                         <div className="project-meta-grid">
                             <div>
                                 <span className="project-meta-label">Category</span>
-                                <p>Digital Design / Fashion Research / Cultural Storytelling</p>
+                                <p>Fashion Design / Costume / Visual Storytelling</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Year</span>
-                                <p>2024</p>
+                                <p>2022</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Focus</span>
-                                <p>Heritage communication, visual research, product concept</p>
+                                <p>Gothic aesthetics, narrative design, character mood</p>
                             </div>
                             <div>
                                 <span className="project-meta-label">Role</span>
-                                <p>Research, concept, visual direction, digital presentation</p>
+                                <p>Concept development, garment design, visual direction</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="project-hero-media">
                         <Image
-                            src="/images/KelashProject.jpg"
-                            alt="KALASH-ify project cover"
+                            src="/images/Project3.webp"
+                            alt="SHIVERTALE project cover"
                             fill
                             priority
                             className="project-cover"
@@ -61,16 +61,16 @@ export default function KalashifyPage() {
                     </div>
                     <div>
                         <p>
-                            KALASH-ify explores how digital design can help preserve and
-                            communicate the cultural identity of the Kalash Valley in Pakistan.
-                            The project brings together visual research, cultural analysis,
-                            fashion inspiration, and product storytelling to make heritage more
-                            accessible in a contemporary format.
+                            SHIVERTALE is a conceptual fashion project inspired by gothic
+                            storytelling and cinematic atmosphere. The design direction draws
+                            influence from dark romantic narratives, emotional symbolism, and
+                            dramatic visual composition.
                         </p>
                         <p>
-                            The work combines traditional references with a modern design
-                            language, translating cultural motifs, colors, materials, and
-                            narratives into visual experiences and product concepts.
+                            The project focuses on how clothing can communicate character,
+                            mood, and narrative. Through fabric selection, silhouette
+                            exploration, and visual styling, the work creates a fictional
+                            fashion world rooted in storytelling and imagination.
                         </p>
                     </div>
                 </div>
@@ -82,28 +82,26 @@ export default function KalashifyPage() {
 
                     <div className="project-cards-three">
                         <article className="project-card-box">
-                            <h3>Preserve identity</h3>
+                            <h3>Create narrative fashion</h3>
                             <p>
-                                Highlight the cultural richness of the Kalash Valley through a
-                                design system that respects heritage and celebrates local
-                                expression.
+                                Design garments that express emotion and story rather than
+                                purely functional clothing.
                             </p>
                         </article>
 
                         <article className="project-card-box">
-                            <h3>Translate culture digitally</h3>
+                            <h3>Explore gothic aesthetics</h3>
                             <p>
-                                Turn cultural research into a digital narrative that feels
-                                visually engaging, contemporary, and accessible to wider
-                                audiences.
+                                Investigate dark romantic visual language through color,
+                                silhouette, texture, and styling.
                             </p>
                         </article>
 
                         <article className="project-card-box">
-                            <h3>Create meaningful design output</h3>
+                            <h3>Develop visual identity</h3>
                             <p>
-                                Develop outcomes that move beyond documentation and into
-                                storytelling, concept design, and product imagination.
+                                Build a cohesive visual world that connects costume design,
+                                character concept, and storytelling.
                             </p>
                         </article>
                     </div>
@@ -112,17 +110,16 @@ export default function KalashifyPage() {
 
             <section className="project-section">
                 <div className="project-container">
-                    <h2 className="project-section-title">Research and design process</h2>
+                    <h2 className="project-section-title">Design process</h2>
 
                     <div className="project-timeline">
                         <div className="project-timeline-item">
                             <span className="project-step">01</span>
                             <div>
-                                <h3>Cultural research</h3>
+                                <h3>Concept inspiration</h3>
                                 <p>
-                                    Study of Kalash geography, dress, language, traditions,
-                                    rituals, lifestyle, and visual symbols to build a grounded
-                                    design direction.
+                                    Exploration of gothic cinema, emotional storytelling, and
+                                    dramatic character narratives as the foundation for design.
                                 </p>
                             </div>
                         </div>
@@ -130,11 +127,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">02</span>
                             <div>
-                                <h3>Visual analysis</h3>
+                                <h3>Moodboard development</h3>
                                 <p>
-                                    Identification of colors, textures, patterns, and cultural
-                                    elements that could be translated into contemporary visual
-                                    communication.
+                                    Creation of visual references combining architecture, costume,
+                                    lighting, and texture to define the project atmosphere.
                                 </p>
                             </div>
                         </div>
@@ -142,11 +138,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">03</span>
                             <div>
-                                <h3>Concept development</h3>
+                                <h3>Garment exploration</h3>
                                 <p>
-                                    Transformation of research insights into moodboards,
-                                    storytelling direction, digital presentation, and product
-                                    concept exploration.
+                                    Experimentation with silhouette, fabric, and layering to
+                                    create dramatic and expressive clothing forms.
                                 </p>
                             </div>
                         </div>
@@ -154,11 +149,10 @@ export default function KalashifyPage() {
                         <div className="project-timeline-item">
                             <span className="project-step">04</span>
                             <div>
-                                <h3>Design application</h3>
+                                <h3>Visual presentation</h3>
                                 <p>
-                                    Application of the concept into a polished project narrative
-                                    that connects cultural heritage with fashion and digital
-                                    storytelling.
+                                    Styling, photography direction, and layout design to present
+                                    the project as a cohesive fashion narrative.
                                 </p>
                             </div>
                         </div>
@@ -173,8 +167,17 @@ export default function KalashifyPage() {
                     <div className="project-gallery">
                         <div className="project-gallery-item project-gallery-large">
                             <Image
+                                src="/images/Project3.webp"
+                                alt="SHIVERTALE featured visual"
+                                fill
+                                className="project-cover"
+                            />
+                        </div>
+
+                        <div className="project-gallery-item">
+                            <Image
                                 src="/images/KelashProject.jpg"
-                                alt="KALASH-ify featured visual"
+                                alt="SHIVERTALE concept visual placeholder"
                                 fill
                                 className="project-cover"
                             />
@@ -183,16 +186,7 @@ export default function KalashifyPage() {
                         <div className="project-gallery-item">
                             <Image
                                 src="/images/ItalianProject2.webp"
-                                alt="Research layout placeholder"
-                                fill
-                                className="project-cover"
-                            />
-                        </div>
-
-                        <div className="project-gallery-item">
-                            <Image
-                                src="/images/Project3.webp"
-                                alt="Visual storytelling placeholder"
+                                alt="SHIVERTALE design visual placeholder"
                                 fill
                                 className="project-cover"
                             />
@@ -209,18 +203,17 @@ export default function KalashifyPage() {
 
                     <div>
                         <p>
-                            The final outcome positions design as a bridge between cultural
-                            preservation and modern communication. Instead of treating heritage
-                            as static, KALASH-ify presents it as living visual material that
-                            can inspire digital experiences, fashion concepts, and
-                            contemporary storytelling.
+                            The project demonstrates how fashion design can function as visual
+                            storytelling. By combining cinematic influence with garment
+                            creation, SHIVERTALE presents clothing as a narrative medium that
+                            communicates emotion, identity, and atmosphere.
                         </p>
 
                         <ul className="project-result-list">
-                            <li>Research-based concept with strong cultural grounding</li>
-                            <li>Clear visual identity and narrative direction</li>
-                            <li>Fashion and product storytelling integration</li>
-                            <li>Portfolio-ready presentation with real thematic depth</li>
+                            <li>Strong narrative-driven fashion concept</li>
+                            <li>Clear visual identity and mood direction</li>
+                            <li>Creative exploration of gothic aesthetics</li>
+                            <li>Portfolio-ready fashion storytelling project</li>
                         </ul>
                     </div>
                 </div>
@@ -229,15 +222,15 @@ export default function KalashifyPage() {
             <section className="project-next-section">
                 <div className="project-container project-next-card">
                     <div>
-                        <p className="project-eyebrow">Next project</p>
-                        <h2>Italian Fashion Culture</h2>
+                        <p className="project-eyebrow">Back to</p>
+                        <h2>Selected Projects</h2>
                         <p>
-                            Research on Italian craftsmanship, economy, and design culture.
+                            Explore the full collection of design and research work.
                         </p>
                     </div>
 
-                    <a href="/work/italian-fashion" className="project-button">
-                        View next project
+                    <a href="/#projects" className="project-button">
+                        View projects
                     </a>
                 </div>
             </section>
